@@ -3,44 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ADDED BOOTSTRAP-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     <link rel = "stylesheet" href="./assets/style.css">
-    <title>The Meal</title>
+    <title>The Menu</title>
 </head>
 <body>
-    <!--Header-->
+    <!--HEADER-->
     <header>
-        <h1>Recipes + Drinks</h1>
+        <h1>The Menu</h1>
     </header>
 
-    <!--Reecipe Generator Section-->
-    <div>
-        <h2>Select Your Ingredients</h2>
-        <button></button>
-        <!--modals for inputs-->
-    </div>
     
+    <!--RECIPE GENERATOR AND DRINK SECTION-->
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+              <h2>FIND YOUR RECIPE</h2>
+            </div>
+            <div class="col-6">
+              <h2>FIND YOUR COCKTAIL</h2>
+            </div>
+          </div>
 
-    <!--Drink Selection Section-->
-    <div>
-        <h2>Drinks</h2>
-        <h3>Select a Cocktail, or randomize!</h3>
-        <div>
-            <!--modals for inputs-->
+
+        <div class="row">
+          <div class="col-6 recipe-bg">
+            <button class = "recipe-btn button">Click here to begin!</button>
+          </div>
+          <div class="col-6 drink-bg">
+            <button class = "drink-btn button">Click here to begin!</button>
+          </div>
         </div>
-    </div>
-
+      </div>
+    
     <!--Final Generated Product Section-->
     <div>
-        <h2>Ready!</h2>
-        <!--ELEMENTS TO BE CREATED UPON SELECTION
-            <p> for recipe
-            <p> for nutrition
-            <p> for drink
+        <h2>Your Meals!</h2>
+        <div class = "results">
+            <p>You have no meals yet! Use the above to get started!</p>
+        <!--ELEMENTS TO BE CREATED UPON SELECTION IN JS
+            <p> for recipe + drink name
+            <p> for Ingredients/recipe steps
+            <img> for picture of drink? recipe? both?
         -->
+        </div>
     </div>
 
     <!--Footer-->
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="/full-stack-project/assets/script.js"></script>
     <script src="./assets/script.js"></script>
 </body>
